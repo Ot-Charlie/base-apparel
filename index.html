@@ -8,26 +8,57 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+<main>
+  <div>
+    <div class="logo-container">
+    <img src="./images/logo.svg" alt="Base Apparel Logo">
+    </div>
+     <div class="mobile-image-container">
+      <picture>
+        <source media="(max-width: 426px)" srcset="./images/hero-mobile.jpg">
+         <img src="./images/hero-mobile.jpg" alt="Hero Image">
+       
+      </picture>
+  </div>
+    <h1><span>WE'RE</span> COMING SOON</h1>
+    <p class="shoppers">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    <form id="form">
+      <div class="input-container">
+        <input type="email" 
+  id="email" 
+  name="email" 
+  placeholder="Email Address" 
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+  required>
+        <img src="./images/icon-error.svg" alt="Error" class="error-icon" id="error-icon">
+        <button type="submit"><img src="./images/icon-arrow.svg" alt="arrow icon"></button>
 
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+      </div>
+ <span class="error-message" id="error-message">Please provide a valid email</span>
+    </form>
+    </div>
+    <div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="./images/hero-desktop.jpg" >
+         <img src="./images/hero-desktop.jpg" alt="Hero Image" class="desktop-image-container">
+       
+      </picture>
+  </div>
   
+</main>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      rel="noopener noreferrer">Frontend Mentor</a>.
+    Coded by <a href="https://stately-unicorn-cddab4.netlify.app/" rel="noopener noreferrer">Onwuli Charles</a>.
     </p>
   </footer>
+   <script src="script.js"></script>
 </body>
 </html>
