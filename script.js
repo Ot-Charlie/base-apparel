@@ -42,16 +42,14 @@ form.addEventListener('submit', function(e) {
 
 // Event listener to hide error messages when user types
 emailInput.addEventListener('input', function() {
-    if (emailInput.value.trim() !== '') {
-        clearValidationError();
-    }
+    clearValidationError();  // Always clear when typing
 });
 
-// Show error when user clicks away from invalid email
+// Show error when user clicks away from empty or invalid email
 emailInput.addEventListener('blur', function() {
     const emailValue = emailInput.value.trim();
     
-    if (emailValue !== '' && !isValidEmail(emailValue)) {
+    if (emailValue === '' || !isValidEmail(emailValue)) {
         showValidationError();
     }
 });

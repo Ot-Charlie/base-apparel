@@ -18,10 +18,15 @@ main{
     margin: 40px 0 0 100px;
 }
 h1{
+    color: hsl(0, 6%, 24%);
     margin: 40px 0 0 100px;
     font-size: 3rem;
     max-width: 3rem;
 letter-spacing: 0.75rem;
+}
+h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
 }
 .shoppers{
     margin: 20px 0 0 100px;
@@ -85,5 +90,55 @@ input::placeholder { /* Standard syntax (Firefox 51+ and modern browsers) */
     /* Change the border color to red when in error state */
     border-color: hsl(0, 93%, 68%); 
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+padding-top: 30px; }
     .attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width: 426px) {
+.desktop-image-container{
+        display: none;
+    }
+   main{
+        flex-direction: column;
+        
+    }
+    .logo-container{
+        margin: 25px 0 0 25px;
+    }
+  
+    h1{
+        margin: 20px auto;
+        font-size: 2.5rem;
+        max-width: 15rem;
+        text-align: center;
+        letter-spacing: 0.5rem;
+    }
+    .shoppers{
+        margin: 20px auto;
+        max-width: 22rem;
+    text-align: center;
+    }
+    .input-container{
+      margin:auto;
+        max-width: 300px;
+    }
+    .error-message{
+        margin: 10px 0 0 60px;
+    }
+    .mobile-image-container{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mobile-image-container img{
+        width: 100%;  
+    }
+    button[type="submit"] {
+        padding: 5px 25px;
+    }
+   button[type="submit"]:hover {
+        transform: translateY(-1px) translateX(5px); 
+    }
+     footer{
+        margin-top: 50px;
+    }
+}
