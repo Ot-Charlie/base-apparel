@@ -68,8 +68,8 @@ I have noticed also that I am getting better at media queries (although there is
 
 ## Author
 
-- Website - [Onwuli Charles](https://stately-unicorn-cddab4.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ot.charie)
+- Website - [Onwuli Charles](https://www.onwuli-charles.netlify.app)
+- Frontend Mentor -(https://www.frontendmentor.io/profile/ot.charlie)
 - Twitter - [@kingcharlie01](https://www.twitter.com/kingcharlie01)
 
 
